@@ -8,11 +8,21 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__left,
 .header__name {
     display: inline-block;
+}
+
+.header__right {
+    display: flex;
+    justify-content: center;
+}
+
+.header__name {
+    margin-right: 10px;
 }
 
 img {
@@ -27,20 +37,91 @@ img {
     display: inline-block;
     border-radius: 50%;
     border: solid 2px white;
+    position: absolute;
+    right: 4px;
 }
 
 .header__left {
     color: white;
+    text-align: center;
     background-color:#1a75ff;
+    width: 40px;
+    height: 40px;
     border-radius: 50px 50px 50px 0px;
-    padding: 10px;
+    padding: 10px 7px 7px 7px;
 }
 
 .background-wrapper {
-    width: 100%;
+    width: 90%;
     height: 700px;
     border-radius: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #003380;
+    margin: auto;
+    background: linear-gradient(45deg, rgba(54,45,172,1) 35%, rgba(167,217,223,1) 76%, rgba(21,168,255,1) 100%);
+    padding-top: 150px;
+}
+
+.settings {
+    background-color: white;
+    height: 500px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.settings-color-background {
+    background-color: #e6f2ff;
+    height: 450px;
+    max-width: 400px;
+    border-radius: 15px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+h1 {
+    margin: 0px 0px 0px 40px;
+    color: #1a75ff;
+    font-size: 16px;
+}
+
+.close-editor {
+    font-size: 12px;
+    color: grey;
+    line-height: 46px;
+    margin: 0px 0px 0px 40px;
+}
+
+.menu-item {
+    align-items: center;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.menu-item--active {
+    color: #1a75ff;
+    align-items: center;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.fa-code-merge {
+    border-radius: 50px;
+    border: 2px solid white;
+    background: #1a75ff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    padding-top: 15px;
+}
+.icon{
+    border-radius: 50px;
+    border: 2px solid #1a75ff;
+    background: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 10px;
+    color: #1a75ff;
+    padding-top: 15px;
 }
