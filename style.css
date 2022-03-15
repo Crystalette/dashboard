@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 10px;
 }
 
 .header__left,
@@ -38,7 +39,7 @@ img {
     border-radius: 50%;
     border: solid 2px white;
     position: absolute;
-    right: 4px;
+    right: 14px;
 }
 
 .header__left {
@@ -56,7 +57,8 @@ img {
     height: 700px;
     border-radius: 30px;
     margin: auto;
-    background: linear-gradient(45deg, rgba(54,45,172,1) 35%, rgba(167,217,223,1) 76%, rgba(21,168,255,1) 100%);
+    background-color: #1a75ff;
+    background-image: radial-gradient(ellipse at 70% 30%, #bddcff, #7bbcf8, #003e85 80%, #001735);
     padding-top: 150px;
 }
 
@@ -66,16 +68,33 @@ img {
     max-width: 400px;
     margin: auto;
     border-radius: 15px;
+    box-shadow: 2px 2px 13px #004d96;
 }
 
 .settings-color-background {
-    background-color: #e6f2ff;
-    height: 450px;
+    background-color: #f2f8ff;
+    height: 435px;
     max-width: 400px;
     border-radius: 15px;
     padding-top: 40px;
     margin: auto;
 }
+
+/* svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.round {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+} */
 
 h1 {
     margin: 0px 0px 0px 40px;
@@ -84,9 +103,9 @@ h1 {
 }
 
 .close-editor {
-    font-size: 12px;
+    font-size: 13px;
     color: grey;
-    line-height: 46px;
+    line-height: 60px;
     margin: 0px 0px 0px 40px;
 }
 
